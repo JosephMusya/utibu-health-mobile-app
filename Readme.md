@@ -6,7 +6,7 @@ This repository contains the code for the **Utibu Health Medical App**, a platfo
 
 Below is the architecture used to develop the app.
 
-![Architecture](../utibu/images/Utibu%20Health%20System%20Architecture.png)
+![Architecture](./utibu/images/Utibu%20Health%20System%20Architecture.png)
 
 ## Features
 
@@ -14,7 +14,7 @@ Below is the architecture used to develop the app.
 
 For clients to make order using the app, they have to be registered. Below is an image showing the registration process.
 
-![Registration screen](../utibu/images/registration.jpg)
+![Registration screen](./utibu/images/registration.jpg)
 
 ### User registration
 
@@ -40,23 +40,23 @@ Users can't create account with passwords with less than 4 characters. Below is 
 
 These errors are demonstrated below:
 
-![short password](../utibu/images/registration-errors.jpg)
+![short password](./utibu/images/registration-errors.jpg)
 
 ### User login
 
 To access the application, users need to login with their username and password in the login screen as shown below.
 
-![login screen](../utibu/images/login.jpg)
+![login screen](./utibu/images/login.jpg)
 
 If users submit the wrong credentials they are notified as demonstrated in the image below
 
-![login errors](../utibu/images/no%20user.jpg)
+![login errors](./utibu/images/no%20user.jpg)
 
 ## 2. Medicine dashboard
 
 This dashboard shows the available medication.
 
-![dosage dashboard](../utibu/images/dashboard.jpg)
+![dosage dashboard](./utibu/images/dashboard.jpg)
 
 The details include:
 
@@ -68,7 +68,7 @@ The details include:
 
 The images below show the dashboard appearance with medicines added to cart
 
-![Dosage added to cart](../utibu/images/dosage-view.jpg)
+![Dosage added to cart](./utibu/images/dosage-view.jpg)
 
 ## 3. Medicine view screen
 
@@ -81,15 +81,15 @@ In this screen the users can be able to add medicines to cart (if in stock) or r
 
 Below is an image showing medicine added to cart,
 
-![Medicine added to cart](../utibu/images/added-to-cart.jpg)
+![Medicine added to cart](./utibu/images/added-to-cart.jpg)
 
 Below is an image for medicines out of stock.
 
-![Medicine out of stock](../utibu/images/out-of-stock-1.jpg)
+![Medicine out of stock](./utibu/images/out-of-stock-1.jpg)
 
 If users try to add the medicine, they get an alert that they cant add the medicine.
 
-![Alert for order out of stock](../utibu/images/out-of-stock.jpg)
+![Alert for order out of stock](./utibu/images/out-of-stock.jpg)
 
 ## 4. Cart view screen
 
@@ -103,7 +103,7 @@ Users can view the medicines that they have added to their cart. This screen sho
     - Delivery method (whether to pick from pharmacy or have the medicine delivered  to their registered address)
     - Payment option (Pay on order or on delivery)
 
-![Cart screen](../utibu/images/cart.jpg)
+![Cart screen](./utibu/images/cart.jpg)
 
 On checking out, the order is moved to the orders dashboard
 
@@ -117,7 +117,7 @@ In this screen users, are able to see the orders they made. The details include
 
 Below is a screen showing these details
 
-![Order dashboard](../utibu/images/orders.jpg)
+![Order dashboard](./utibu/images/orders.jpg)
 
 ## 6. Profile screen
 
@@ -125,8 +125,8 @@ In this section, users are able to view their personal information. This will co
 
 The screen also provides the users with ability to logout from the application
 
-![profile section](../utibu/images/address.jpg)
+![profile section](./utibu/images/address.jpg)
 
 ## Below is the application logo
 
-![logo](../utibu/images/logo.png)
+![logo](./images/logo.png)
