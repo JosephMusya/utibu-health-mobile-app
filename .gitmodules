@@ -1,0 +1,3 @@
+[submodule "utibu-health-backend"]
+	path = utibu-health-backend
+	url = https://github.com/JosephMusya/utibu-health-backend.git
