@@ -6,7 +6,7 @@ This repository contains the code for the **Utibu Health Medical App**, a platfo
 
 Below is the architecture used to develop the app.
 
-![Architecture](./images/Utibu%20Health%20System%20Architecture.png)
+![archi](./images/Utibu%20Health%20System%20Architecture.png#width=250)
 
 ## Features
 
