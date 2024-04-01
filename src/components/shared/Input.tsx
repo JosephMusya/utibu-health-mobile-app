@@ -2,6 +2,11 @@ import { View, Text, TextInput, StyleSheet } from "react-native";
 import React from "react";
 import { InputType } from "../../types";
 import { color } from "../../constants/theme/theme";
+
+export const ErrorBox = ({ error }: { error: string[] }) => {
+  return <Text style={{ color: "red" }}>{error}</Text>;
+};
+
 const Input = ({
   placeholder,
   borderColor = color.primaryColor,
@@ -13,10 +18,6 @@ const Input = ({
   value,
   onChange,
 }: InputType) => {
-  const ErrorBox = ({ error }: { error: string[] }) => {
-    return <Text style={{ color: "red" }}>{error}</Text>;
-  };
-
   return (
     <View>
       {label && <Text style={styles.label}>{label}</Text>}

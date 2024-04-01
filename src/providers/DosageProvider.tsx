@@ -44,6 +44,8 @@ interface DosageContextType {
   userProfile?: UserType;
 }
 
+import { API_URL } from "../private/env";
+
 export const DoseContext = createContext<DosageContextType>({});
 
 export const DoseProvider = ({ children }: any) => {
@@ -57,8 +59,6 @@ export const DoseProvider = ({ children }: any) => {
   const [loginLoading, setLoginLoading] = useState<boolean>(false);
   const [loginErr, setLoginErr] = useState<GenericError | null>();
   const [userProfile, setUserProfile] = useState<UserType>();
-
-  const API_URL: string = "http://192.168.0.102:8000";
 
   const updateCart = async ({ id, qty }: { id: string; qty: number }) => {
     console.log({ qty });

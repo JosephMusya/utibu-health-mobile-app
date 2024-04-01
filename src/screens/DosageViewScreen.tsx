@@ -19,6 +19,7 @@ import { color } from "../constants/theme/theme";
 import Button from "../components/shared/Button";
 import EmptyPlaceholder from "../components/shared/EmptyPlaceholder";
 import { useDosageContext } from "../providers/DosageProvider";
+import { API_URL } from "../private/env";
 
 const DosageView = ({ navigation, route }: any) => {
   const width = Dimensions.get("window").width;
@@ -31,7 +32,6 @@ const DosageView = ({ navigation, route }: any) => {
     deleteCartItem = () => {},
     cartItems,
   } = useDosageContext();
-  const API_URL: string = "http://192.168.0.102:8000";
 
   const getPrescription = async ({ id }: Partial<Dose>) => {
     try {

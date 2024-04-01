@@ -27,7 +27,6 @@ import EmptyPlaceholder from "../components/shared/EmptyPlaceholder";
 import { useDosageContext } from "../providers/DosageProvider";
 
 const CartScreen = ({ navigation }: any) => {
-  const API_URL: string = "http://192.168.0.102:8000";
   const [payment, setPayment] = useState<Partial<OrderType>>({
     payment: "On Order",
   });

@@ -14,14 +14,13 @@ import { style as Style } from "../constants/styles/style";
 import { CartItems, Dose, Prescription } from "../types";
 import { color } from "../constants/theme/theme";
 import EmptyPlaceholder from "../components/shared/EmptyPlaceholder";
-// import { API_URL } from "react-native-dotenv";
 import { useDosageContext } from "../providers/DosageProvider";
+import { API_URL } from "../private/env";
 
 const DashboardScreen = ({ navigation }: any) => {
   const [dose, setDose] = useState<Prescription[]>();
   const [loading, setLoading] = useState<boolean>(true);
   const [error, setError] = useState<boolean>(false);
-  const API_URL: string = "http://192.168.0.102:8000";
   const [refreshing, setRefreshing] = useState<boolean>(false);
 
   const getDosage = async () => {

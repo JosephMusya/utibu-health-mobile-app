@@ -16,11 +16,12 @@ import {
   RegisterFormik,
   UserRegistrationType,
 } from "../types";
-import Input from "../components/shared/Input";
+import Input, { ErrorBox } from "../components/shared/Input";
 import { useState } from "react";
 import Button from "../components/shared/Button";
 import { KeyboardAvoidingView } from "react-native";
 import { Formik, FormikProps } from "formik";
+import { API_URL } from "../private/env";
 
 export interface ErrorType {
   username?: string[];
@@ -30,10 +31,10 @@ export interface ErrorType {
   password_1?: string[];
   password_2?: string[];
   detail?: string;
+  password_error?: string[];
 }
 
 const RegisterScreen = ({ navigation }: NavigationProps) => {
-  const API_URL = "http://192.168.0.102:8000";
   const [errors, setErrors] = useState<ErrorType | null>({});
   const [loading, setLoading] = useState<boolean>(false);
 
@@ -64,6 +65,7 @@ const RegisterScreen = ({ navigation }: NavigationProps) => {
         }
       } else {
         const errors = await addUser.json();
+        console.log(errors);
         setErrors(errors);
       }
     } catch (error) {
@@ -100,6 +102,7 @@ const RegisterScreen = ({ navigation }: NavigationProps) => {
             {errors?.detail && (
               <Text style={{ color: "red" }}>{errors.detail}</Text>
             )}
+
             <View>
               <Input
                 label="Username"
@@ -140,6 +143,11 @@ const RegisterScreen = ({ navigation }: NavigationProps) => {
                 onChange={props.handleChange("address")}
               />
             </View>
+            {errors?.password_error && (
+              <View style={{ paddingTop: 10 }}>
+                <ErrorBox error={errors.password_error} />
+              </View>
+            )}
             <View>
               <Input
                 label="Password 1"
