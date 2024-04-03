@@ -73,6 +73,7 @@ const DashboardScreen = ({ navigation }: any) => {
         />
       ) : (
         <ScrollView
+          style={{ flex: 1 }}
           refreshControl={
             <RefreshControl refreshing={refreshing} onRefresh={refetch} />
           }

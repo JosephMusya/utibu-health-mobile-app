@@ -42,7 +42,7 @@ const OrdersScreen = ({ navigation }: any) => {
     getOrders();
   }, []);
   return (
-    <SafeAreaView>
+    <SafeAreaView style={{ flex: 1 }}>
       {loadingOrders ? (
         <ActivityIndicator size={40} color={color.primaryColor} />
       ) : orderErr ? (
